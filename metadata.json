@@ -1,0 +1,8 @@
+{
+  "name": "CareLens",
+  "description": "AI-powered at-home triage and skin health assistant designed to reduce unnecessary hospital visits.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
