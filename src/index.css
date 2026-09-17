@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Quicksand:wght@300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Quicksand", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Comfortaa", cursive;
+  
+  --color-pastel-blue: #e0f2fe;
+  --color-pastel-pink: #fce7f3;
+  --color-pastel-green: #dcfce7;
+  --color-pastel-yellow: #fef9c3;
+  --color-pastel-purple: #f3e8ff;
+  --color-pastel-orange: #ffedd5;
+  
+  --radius-bubble: 2.5rem;
+  --radius-bubble-lg: 3.5rem;
+}
+
+@layer base {
+  body {
+    @apply bg-[#fafafc] text-slate-800 font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+}
+
+.bubble-shadow {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05), 
+              0 4px 10px -5px rgba(0, 0, 0, 0.02);
+}
+
+.glass-bubble {
+  @apply bg-white/70 backdrop-blur-md border border-white/50;
+}
